@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Results summary component</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'HankenGrotesk': ['HankenGrotesk', 'sans-serif'],
+          },
+          colors: {
+            'light-red': 'hsl(0, 100%, 67%)',
+            'orangey-yellow': 'hsl(39, 100%, 56%)',
+            'green-teal': 'hsl(166, 100%, 37%)',
+            'cobalt-blue': 'hsl(234, 85%, 45%)',
+            'light-slate-blue': 'hsl(252, 100%, 67%)',
+            'light-royal-blue': 'hsl(241, 81%, 54%)',
+            'violet-blue': 'hsla(256, 72%, 46%, 1)',
+            'persian-blue': 'hsla(241, 72%, 46%, 0)',
+            'dark-grey-blue': 'hsl(224, 30%, 27%)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="font-HankenGrotesk">
+
+  <div class="flex flex-col justify-center items-center h-screen w-screen">
+
+    <!-- Card -->
+    <div class="flex md:flex-row flex-col justify-center items-center text-center md:drop-shadow-xl md:bg-white md:rounded-3xl md:h-96 relative">
+
+      <!-- Result -->
+      <div class="flex flex-col items-center justify-center space-y-4 bg-gradient-to-b from-light-slate-blue to-light-royal-blue p-7 rounded-2xl w-3/5 md:w-1/2 md:h-96">
+        <h1 class="text-white/75 text-md">Your Result</h1>
+        <div class="flex flex-col justify-center bg-black w-32 h-32 rounded-full bg-gradient-to-t from-light-slate-blue to-light-royal-blue space-y-1">
+          <span class="text-5xl text-white font-bold">76</span>
+          <span class="text-sm text-white/50">of 100</span>
+        </div>
+        <div class="space-y-2">
+          <h2 class="text-white text-lg text-bold">Great</h2>
+          <p class="text-white/75 text-sm">You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </div>
+
+      <!-- Summary -->
+      <div class="flex flex-col justify-center p-7 space-y-6 w-3/5 md:w-1/2 md:h-96">
+        <h1 class="text-left text-md">Summary</h1>
+        <div class="flex flex-col space-y-2">
+          <div class="flex flex-row space-x-4 bg-light-red/15 p-2 rounded-xl relative">
+            <div class="flex flex-row space-x-2">
+              <img src="./assets/images/icon-reaction.svg" alt="Reaction">
+              <span>Reaction</span>
+            </div>
+            <div class="absolute inset-y-2 right-4">
+              <span class="font-bold">80</span>
+              <span>/ 100</span>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5 bg-orangey-yellow/15 p-2 rounded-xl relative">
+            <div class="flex flex-row space-x-2">
+              <img src="./assets/images/icon-memory.svg" alt="Memory">
+              <span>Memory</span>
+            </div>
+            <div class="absolute inset-y-2 right-4">
+              <span class="font-bold">92</span>
+              <span>/ 100</span>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5 bg-green-teal/15 p-2 rounded-xl relative">
+            <div class="flex flex-row space-x-2">
+              <img src="./assets/images/icon-verbal.svg" alt="Verbal">
+              <span>Verbal</span>
+            </div>
+            <div class="absolute inset-y-2 right-4">
+              <span class="font-bold">61</span>
+              <span>/ 100</span>
+            </div>
+          </div>
+          <div class="flex flex-row space-x-5 bg-cobalt-blue/15 p-2 rounded-xl relative">
+            <div class="flex flex-row space-x-2">
+              <img src="./assets/images/icon-visual.svg" alt="Visual">
+              <span>Visual</span>
+            </div>
+            <div class="absolute inset-y-2 right-4">
+              <span class="font-bold">72</span>
+              <span>/ 100</span>
+            </div>
+          </div>
+        </div>
+        <div class="bg-dark-grey-blue p-2 rounded-full text-white text-sm hover:bg-cobalt-blue hover:cursor-pointer">
+          <a href="#">Continue</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="absolute inset-x-0 bottom-0 text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="underline decoration-solid text-dark-grey-blue hover:text-cobalt-blue hover:cursor-pointer">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/rskomda" target="_blank" class="underline decoration-solid text-dark-grey-blue hover:text-cobalt-blue hover:cursor-pointer">Regina Martha</a>.
+    </div>
+  </div>
+</body>
+</html>
